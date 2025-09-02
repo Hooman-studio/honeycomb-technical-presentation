@@ -42,7 +42,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# Case Study — Hooman Dashboard
+# Case Study — Project Management Dashboard
 
 Realtime updates, authorization workflow and notifications system
 
@@ -58,7 +58,7 @@ Realtime updates, authorization workflow and notifications system
   - Storing data locally
   - Running mutations when going back online
   - Ideal for mobile app usage.
-- **Good DX for fast iteration:**:
+- **Good DX for fast iteration:**
 
 ```ts
 const data = useQuery(z.query.task.where("assigned_id", "=", "user123").one());
@@ -126,7 +126,7 @@ export function databaseNotificationChannel(
 
 # Our View on Mobile Application Development
 
-- **Use the platform** Swift/Kotlin, React Native or Flutter?
+- **Use the platform**
 - **Write Once** Use everywhere (we like that!)
 - **Large Ecosystem** [Expo Packages](https://github.com/expo/expo/tree/main/packages)
 - **Can still use native code**
@@ -137,19 +137,11 @@ export function databaseNotificationChannel(
 
 ---
 
-<img src="/search-flow.png" class="w-[80%]">
-
----
-
-<img src="/transaction-flow.png" class="w-[80%]">
-
----
-
 ## Secure Margin Calculation Engine
 
 - Server-side, centralized margins in DB
 - Logic-based permissions; endpoint input validation
-- Indexed tables; cache/memoize hot paths
+- **Performance:** Indexed tables; cache/memoize hot paths
 
 ---
 
@@ -157,22 +149,18 @@ export function databaseNotificationChannel(
 
 - Optimistic updates; sync on reconnect
 - Custom conflict resolution for carts/crates
+  - Option: Event data
 - Clear user feedback to reapply/fix when invalid
-
----
-
-## Auditable Flows
-
-- Append-only records with timestamps + correlation IDs
-- Track: crate deltas, chat archives, cart history
 
 ---
 
 ## Closing Impact
 
+--
+
 - Reliable UX
 - Secure, validated pricing
 - Transparent, auditable history
-- Scalable architecture aligned to the BRD
+- Scalable architecture aligned with Business Requirements
 
 ---
